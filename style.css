@@ -44,14 +44,15 @@ header nav a:hover:after{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: calc(100vh - 75px);
+    min-height: calc(100vh - 75px);
     padding: 20px;
     box-sizing: border-box;
+    position: relative;
 }
 .home-banner .about{
     max-width: 600px;
     text-align: justify;
-    position: relative;
+    position: absolute;
     top: 50%;
     transform: translateY(-50%);
     background: #fff8;
@@ -92,9 +93,59 @@ header nav a:hover:after{
     border-bottom: 2px solid #000;
     border-right: 2px solid #000;
 }
-
 .home-banner .about a:hover::before,
 .home-banner .about a:hover:after{
     width: 0;
     height: 0;
+}
+
+.lessons{
+    min-height: 100vh;
+    padding: 40px;
+    box-sizing: border-box;
+    background: #eee;
+}
+.lessons .lesson-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.lessons .lesson-container .lesson-box{
+    display: flex;
+    max-width: 500px;
+    min-width: 400px;
+    max-height: 300px;
+    margin: 15px;
+    box-shadow: 5px 5px 40px 0px #aaa;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.lessons .lesson-container .lesson-box .img-box{
+    flex: 1;
+    overflow: hidden;
+}
+.lessons .lesson-container .lesson-box .img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.lessons .lesson-container .lesson-box .info{
+    flex: 1;
+    position: relative;
+    padding: 0 20px;
+}
+.lessons .lesson-container .lesson-box .info a{
+    position: absolute;
+    bottom: 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    border: 2px solid #000;
+    padding: 10px 20px;
+    transition: .3s;
+}
+.lessons .lesson-container .lesson-box .info a:hover{
+    color: #000;
+    background: none;
 }
