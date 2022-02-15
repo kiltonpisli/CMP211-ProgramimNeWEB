@@ -80,7 +80,7 @@ header .fa-bars{
 }
 
 .home-banner{
-    background: #fff url(../img/img3.jpg);
+    background: url(../img/img3.jpg);
     /* mix-blend-mode: darken; */
     background-size: cover;
     background-repeat: no-repeat;
@@ -271,6 +271,9 @@ header .fa-bars{
     background: #000;
 }
 
+section.about{
+    padding: 30px;
+}
 
 footer{
     background: #000;
@@ -285,6 +288,7 @@ footer p{
 footer h3{
     margin: 0;
 }
+
 
 
 @media (max-width: 800px) {
