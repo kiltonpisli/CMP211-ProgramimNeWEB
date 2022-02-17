@@ -152,6 +152,10 @@ header .fa-bars{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    max-width: 1200px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .lessons .lesson-container .lesson-box{
     display: flex;
@@ -219,6 +223,10 @@ header .fa-bars{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    max-width: 1200px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .projects .project-container .project-box{
     max-width: 500px;
