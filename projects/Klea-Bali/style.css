@@ -1,0 +1,222 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f7f3f0;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    align-items: center;
+    background-color: #f7f3f0;
+}
+
+header nav a{
+    padding: 10px 15px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+header nav a:hover{
+    color: #999;
+}
+
+main{
+    min-height: 120vh;
+    display: flex;
+}
+main .image-box{
+    background-image: url(./images/header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex: 1;
+}
+main .flexbox{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main .flexbox .heading{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .flexbox .heading h1{
+    font-weight: 100;
+    font-size: 60px;
+    line-height: 65px;
+    word-spacing: 10px;
+}
+ main .flexbox .info{ 
+    background-color: rgb(202,219,215);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 80px;
+    box-sizing: border-box;
+    align-items: flex-start;
+}
+main .flexbox .info p{
+    font-size: 18px;
+    line-height: 30px;
+}
+main .flexbox .info a{
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #000;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background: rgb(51, 57, 65);
+    transition: .3s;
+}
+main .flexbox .info a:hover{
+    color: #000;
+    background: #fff0;
+}
+
+.form-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.form-container .img-box{
+    flex: 1;
+    text-align: center;
+}
+.form-container form{
+    flex: 1;
+    padding-right: 150px;
+}
+.form-container form .inline{
+    display: flex;
+}
+.form-container form .inline .input:nth-child(1){
+    margin-right: 30px;
+}
+.form-container form .inline .input{
+    flex: 1;
+}
+.form-container form input,
+.form-container form textarea{
+    margin: 7px 0 15px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 7px 15px;
+    border-radius: 15px;
+    background: none;
+    border: 1px solid;
+}
+.form-container form textarea{
+    height: 150px;
+}
+.form-container form input[type="submit"]{
+    max-width: 150px;
+    background: rgb(51, 57, 65);
+    color: #fff;
+    transition: .3s;
+}
+.form-container form input[type="submit"]:hover{
+    background: #fff0;
+    color: #000;
+}
+main.about{
+    min-height: 80vh;
+}
+main.about .flexbox .info{
+    justify-content:flex-start;
+    padding: 0 80px;
+    text-align: center; 
+}
+main.about .flexbox a{
+ align-items: center;
+}
+main.about .image-box{
+   background-image: none;
+   display: flex;
+   justify-content: center;
+   align-items: center
+}
+
+main.classes .image-box{
+    background-image: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main.classes .flexbox .info p{
+    font-size: 18px;
+    line-height: 30px;
+    flex-direction: row;
+    justify-content: end;
+}
+ .class{
+    width: 30%;
+    min-height: 200px;
+    margin-bottom: 40px;
+    text-align: center;
+    max-width: 500px;
+    min-width: 410px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+.class.class a.book{ 
+    font-weight: 300; 
+    padding: 0px 20px; 
+    line-height: 1.5rem; 
+    display: block;
+    margin-left: auto; 
+    margin-right: auto; 
+    text-align: center;  
+}
+.class .book {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #000;
+    
+    border-radius: 20px;
+    background: rgb(51, 57, 65);
+    transition: .3s;
+}
+footer{
+    font-style: italic;
+    font-size: 0.8rem;
+    color: #000;
+    text-align: center;
+    padding: 50px;
+   
+}
+.class-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end
+}
+/* mobile view */
+@media(max-width:400px){
+    .class{
+        width:100%
+    }
+}
+
+/* Tablet view */
+@media(max-width:768px){
+    header nav{
+        display: none;
+    }
+    .classes .image-box{
+        display: none !important;
+    }
+    .class{
+        width: 100%;
+    }
+    }
+

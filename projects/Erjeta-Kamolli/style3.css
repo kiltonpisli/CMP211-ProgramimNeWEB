@@ -1,0 +1,144 @@
+header{
+    min-height: 100px;
+    background-color: #D35400;
+    margin-bottom: 40px;
+    width: 100%;
+    
+}
+.logo img{
+    height: 100px;
+    text-align: left;
+}
+.headerlogo{
+    align-items: center;
+    max-width: 1024px;
+    min-height: 100px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+    color: #F1C40F ;
+    font-size: 15px;
+}
+
+    .nav-links ul li::after{
+        content: '';
+        width: 0%;
+        height: 2px;
+        background: #5064d8ef;
+        display: block;
+        margin: auto; 
+        transition: 0.5s;
+    }
+
+    .nav-links ul li:hover::after{
+        width: 100%;
+    }
+
+body{
+    background-color: #1B4F72;
+}
+.container{
+    max-width: 1024px;
+    margin:0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.col p{
+    color: white;
+    font-family: font-family: 'Festive';
+    font-weight: 300;
+    padding:0px 20px;
+}
+.col{
+    width:30%;
+    min-height: 200px;
+    background-color: #D68910;
+    margin-bottom: 40px;
+    box-shadow: 2px 2px 10px gray;
+
+}
+.col img{
+    max-width: 100%;
+    height: auto;
+}
+
+.hide-desktop-only{
+    display: none;
+}
+
+@media(max-width:768px){
+.col{
+    width: 45%;
+}
+
+.hide-desktop-only{
+    display: block;
+}
+
+}
+   
+
+@media(max-width:400px){
+    .hide-desktop{
+        display: none;
+    }
+    .col{
+        width: 100%;
+    }
+}
+
+/*--------Footer--------*/
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    color: rgb(250, 237, 237);
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icons .fa{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+.fa-heart-o{
+    color: #f44336;
+}
+
